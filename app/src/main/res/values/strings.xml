@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyFirstApplication</string>
+    <string name="hello_text">Hello World ! My name is Rasul !</string>
+    <string name="login_title">Вход в систему</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="action_sign_in">Войти</string>
+</resources>
