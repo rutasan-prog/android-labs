@@ -1,15 +1,30 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+**/build/
+
+# Local configuration (SDK path, etc.)
 local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Keystore files (никогда не коммитим ключи подписи)
+*.jks
+*.keystore
+
+# Native/NDK builds
+.cxx/
+.externalNativeBuild/
+
+# Logs and temp files
+*.log
+*.tmp
+*.orig
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Captures (screenshots from Android Studio)
+captures/
