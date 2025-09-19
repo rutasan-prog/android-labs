@@ -16,8 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/login_logo_height"
             android:layout_marginTop="@dimen/spacing_large"
-            android:layout_height="216dp"
-            android:layout_marginTop="30dip"
             android:contentDescription="@string/error_image"
             app:srcCompat="@mipmap/ic_launcher_les_foreground" />
 
@@ -37,14 +35,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_medium"
-            android:hint="@string/hint_login"
-            android:inputType="textEmailAddress"
-            android:minHeight="@dimen/input_min_height" />
-            android:layout_marginTop="24dp"
             android:autofillHints=""
             android:hint="@string/hint_login"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/input_min_height"
             tools:ignore="VisualLintTextFieldSize" />
 
 
@@ -55,12 +50,7 @@
             android:layout_marginTop="@dimen/spacing_xsmall"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
-            android:minHeight="@dimen/input_min_height" />
-            android:layout_marginTop="12dp"
-            android:autofillHints=""
-            android:hint="@string/hint_password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
+            android:minHeight="@dimen/input_min_height"
             tools:ignore="VisualLintTextFieldSize" />
 
 
@@ -71,10 +61,7 @@
             android:layout_marginTop="@dimen/spacing_small"
             android:backgroundTint="@color/login_button_background"
             android:text="@string/action_sign_in"
-            android:textColor="@color/login_button_text" />
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#BC2626"
-            android:text="@string/action_sign_in"
+            android:textColor="@color/login_button_text"
             tools:ignore="VisualLintButtonSize" />
 
 
