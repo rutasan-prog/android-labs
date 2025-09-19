@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        boolean USE_CONSTRAINT = false;
+        boolean USE_CONSTRAINT = true;
         if (USE_CONSTRAINT) {
             setContentView(R.layout.activity_login_constraint);
         } else {
