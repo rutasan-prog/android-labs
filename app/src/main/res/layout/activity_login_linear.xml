@@ -8,58 +8,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="@dimen/spacing_medium">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="216dp"
-            android:layout_marginTop="30dip"
+            android:layout_height="@dimen/login_logo_height"
+            android:layout_marginTop="@dimen/spacing_large"
             app:srcCompat="@mipmap/ic_launcher_les_foreground" />
 
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dip"
+            android:layout_marginTop="@dimen/spacing_xlarge"
             android:gravity="center_horizontal"
             android:text="@string/login_title"
-            android:textSize="24sp"
+            android:textColor="@color/login_text_primary"
+            android:textSize="@dimen/text_size_title"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="@dimen/spacing_medium"
             android:hint="@string/hint_login"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp"/>
+            android:minHeight="@dimen/input_min_height" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="@dimen/spacing_xsmall"
             android:hint="@string/hint_password"
             android:inputType="textPassword"
-            android:minHeight="48dp"/>
+            android:minHeight="@dimen/input_min_height" />
 
         <Button
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#BC2626"
-            android:text="@string/action_sign_in" />
+            android:layout_marginTop="@dimen/spacing_small"
+            android:backgroundTint="@color/login_button_background"
+            android:text="@string/action_sign_in"
+            android:textColor="@color/login_button_text" />
 
         <TextView
             android:id="@+id/tvLoginResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/spacing_small"
             android:gravity="center_horizontal"
-            android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textColor="@color/login_text_primary"
+            android:textSize="@dimen/text_size_body" />
     </LinearLayout>
 </ScrollView>
