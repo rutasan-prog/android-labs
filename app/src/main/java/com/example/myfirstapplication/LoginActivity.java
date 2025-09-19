@@ -2,11 +2,13 @@ package com.example.myfirstapplication;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -19,5 +21,14 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             setContentView(R.layout.activity_login_linear);
         }
+        EditText etLogin = findViewById(R.id.etLogin);
+        Button btnSignIn = findViewById(R.id.btnSignIn);
+        TextView tvLoginResult = findViewById(R.id.tvLoginResult);
+
+        btnSignIn.setOnClickListener(view -> {
+            String loginText = etLogin.getText().toString();
+            Toast.makeText(LoginActivity.this, loginText, Toast.LENGTH_SHORT).show();
+            tvLoginResult.setText(loginText);
+        });
     }
 }
