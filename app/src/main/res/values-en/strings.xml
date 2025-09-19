@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFirstApplication</string>
+    <string name="hello_text">Hello World! My name is Rasul!</string>
+    <string name="login_title">Sign In</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="error_image">Error, image is missing</string>
+</resources>
