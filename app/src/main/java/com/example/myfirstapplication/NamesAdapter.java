@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+/**
+ * Адаптер RecyclerView, который связывает список имён с макетом элемента списка.
+ */
+
 public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NameViewHolder> {
 
     private final List<String> names;
@@ -37,6 +41,10 @@ public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NameViewHold
         return names.size();
     }
 
+
+    /**
+     * ViewHolder хранит ссылку на TextView, отображающую отдельное имя списка.
+     */
     static class NameViewHolder extends RecyclerView.ViewHolder {
 
         final TextView nameTextView;

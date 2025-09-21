@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Разметка отдельного элемента списка имён: один TextView с отступами. -->
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tvName"
     android:layout_width="match_parent"

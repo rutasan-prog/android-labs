@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Активити со списком имён, который создаёт RecyclerView и заполняет его статическими данными.
+ */
+
 public class NamesListActivity extends AppCompatActivity {
 
     @Override
