@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -16,10 +17,17 @@ import java.util.List;
 
 public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NameViewHolder> {
 
-    private final List<String> names;
+    public interface OnNameClickListener {
+        void onNameClick(@NonNull String name);
+    }
 
-    public NamesAdapter(@NonNull List<String> names) {
+    private final List<String> names;
+    @Nullable
+    private final OnNameClickListener onNameClickListener;
+
+    public NamesAdapter(@NonNull List<String> names, @Nullable OnNameClickListener onNameClickListener) {
         this.names = names;
+        this.onNameClickListener = onNameClickListener;
     }
 
     @NonNull
@@ -32,8 +40,13 @@ public class NamesAdapter extends RecyclerView.Adapter<NamesAdapter.NameViewHold
 
     @Override
     public void onBindViewHolder(@NonNull NameViewHolder holder, int position) {
-        String name = names.get(position);
+        final String name = names.get(position);
         holder.nameTextView.setText(name);
+        holder.itemView.setOnClickListener(view -> {
+            if (onNameClickListener != null) {
+                onNameClickListener.onNameClick(name);
+            }
+        });
     }
 
     @Override

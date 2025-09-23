@@ -6,4 +6,7 @@
     <string name="hint_password">Password</string>
     <string name="action_sign_in">Sign In</string>
     <string name="error_image">Error, image is missing</string>
+    <string name="names_list_greeting">Hello, %1$s!</string>
+    <string name="names_list_default_greeting">Hello!</string>
+    <string name="selected_name_result">You selected: %1$s</string>
 </resources>
