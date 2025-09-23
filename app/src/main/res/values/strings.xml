@@ -6,4 +6,7 @@
     <string name="hint_password">Пароль</string>
     <string name="action_sign_in">Войти</string>
     <string name="error_image">Ошибка, изображение отсутствует</string>
+    <string name="names_list_greeting">Привет, %1$s!</string>
+    <string name="names_list_default_greeting">Привет!</string>
+    <string name="selected_name_result">Вы выбрали: %1$s</string>
 </resources>
